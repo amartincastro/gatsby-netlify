@@ -5,6 +5,18 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://api.github.com/graphql', true)
+
+request.onload = function () {
+  // Begin accessing JSON data here
+  }
+
+// Send request
+request.send()
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
